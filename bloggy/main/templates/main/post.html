@@ -1,0 +1,9 @@
+{% extends 'main/home.html' %}
+
+{% block content %}
+    <article class="post">
+        <h2>{{ title }}</h2>
+        {%load static %}
+        {{ content|safe }}
+    </article>
+{% endblock content %}
